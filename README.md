@@ -1,8 +1,7 @@
-# OfficialNiteshRanaMagar — GitHub Pages
+# Preservation-first CMS starter
 
-Built from the supplied Blogger theme XML, Google Takeout export and four screenshots. Homepage uses posts from **OfficialNiteshRanaMagar** (not the other blogs in the Takeout). Source files are preserved in this archive.
-
-Upload website files and assets folder to the root of your GitHub Pages repository. Do not upload the ZIP as a single file.
-
-## Important limitations
-Blogger dynamic comments, followers, native archive widgets, analytics and server-side features cannot work identically on static GitHub Pages. Videos and externally hosted images require internet access and may be subject to external hosting/embed restrictions. Original screenshot is a reference; exact pixel identity is not guaranteed. The domain was not confirmed, so CNAME was not created. The source XML and Takeout ZIP are retained for preservation.
+- `original-blogger-template.xml` is an exact copy of the uploaded Blogger theme. It is NOT a GitHub Pages-ready `index.html`.
+- `admin/index.html` and `admin/config.yml` are a Decap CMS starter only. The GitHub OAuth proxy and repository must be configured before login works.
+- CMS posts are saved as Markdown under `posts/`. GitHub Pages does not automatically display them on an existing static HTML site; a rendering/build integration is still required.
+- Existing GitHub Pages site files should remain unchanged. Do not replace your existing `index.html` with the Blogger XML.
+- To complete a pixel-faithful conversion and preserve actual post bodies, video embeds and external links, supply the currently deployed GitHub repository files and Blogger post export. A Blogger theme alone does not contain all posts or runtime widget data.
