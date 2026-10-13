@@ -1,0 +1,23 @@
+
+backend:
+  name: github
+  repo: Niteshmagar/Nitesh-Magar
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
